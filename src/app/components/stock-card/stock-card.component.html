@@ -1,0 +1,15 @@
+<div class="card" [ngClass]="cardClass()">
+  <div class="header">
+    <h1>{{ stock().name }}</h1>
+  </div>
+  <div class="content">
+    <p><strong>Price:</strong> ${{ stock().price | number:'1.2-2' }}</p>
+    <p><strong>High:</strong> ${{ stock().high | number:'1.2-2' }}</p>
+    <p><strong>Low:</strong> ${{ stock().low | number:'1.2-2' }}</p>
+    <div class="desktop-only">
+      <p><strong>52W High:</strong> ${{ stock().high52 | number:'1.2-2' }}</p>
+      <p><strong>52W Low:</strong> ${{ stock().low52 | number:'1.2-2' }}</p>
+    </div>
+    <app-toggle [isOn]="stock().isActive" (toggled)="onToggle($event)"></app-toggle>
+  </div>
+</div>

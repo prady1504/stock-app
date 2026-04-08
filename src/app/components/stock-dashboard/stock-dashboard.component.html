@@ -1,0 +1,8 @@
+<div class="container">
+  @for (stock of stocks(); track stock.symbol) {
+  <app-stock-card
+    [stock]="stock"
+    (toggle)="toggleStock($event)">
+  </app-stock-card>
+  }
+</div>

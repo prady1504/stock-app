@@ -1,0 +1,4 @@
+<div class="toggle-container" [class.active]="isOn()" (click)="toggle()">
+  <div class="toggle-label" [ngClass]="isOn() ? 'mr-30' : 'ml-20'">{{ isOn() ? 'ON' : 'OFF' }}</div>
+  <div class="toggle-circle"></div>
+</div>

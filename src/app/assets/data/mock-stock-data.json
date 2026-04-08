@@ -1,0 +1,46 @@
+[
+  {
+    "symbol": "AAPL",
+    "name": "Apple",
+    "price": 180,
+    "high": 180,
+    "low": 180,
+    "high52": 200,
+    "low52": 120,
+    "isActive": true,
+    "lastPrice": 180
+  },
+  {
+    "symbol": "GOOGL",
+    "name": "Alphabet",
+    "price": 2700,
+    "high": 2700,
+    "low": 2700,
+    "high52": 3000,
+    "low52": 2000,
+    "isActive": true,
+    "lastPrice": 2700
+  },
+  {
+    "symbol": "MSFT",
+    "name": "Microsoft",
+    "price": 320,
+    "high": 320,
+    "low": 320,
+    "high52": 350,
+    "low52": 250,
+    "isActive": true,
+    "lastPrice": 320
+  },
+  {
+    "symbol": "TSLA",
+    "name": "Tesla",
+    "price": 700,
+    "high": 700,
+    "low": 700,
+    "high52": 900,
+    "low52": 400,
+    "isActive": true,
+    "lastPrice": 700
+  }
+]

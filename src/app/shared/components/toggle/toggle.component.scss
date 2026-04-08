@@ -1,0 +1,56 @@
+@import "../../../../styles/token";
+.toggle-container {
+    width: $toggle-width;
+    height: $toggle-height;
+    border-radius: 25px;
+    background-color: $color-toggle-bg;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.3s ease;
+
+    .toggle-label {
+        flex: 1;
+        text-align: center;
+        font-weight: 600;
+        color: $color-white;
+        z-index: 1;
+    }
+
+    .mr-30 {
+        margin-right: $margin-30;
+    }
+
+    .ml-20 {
+        margin-left: $margin-20;
+    }
+
+    .toggle-circle {
+        width: $toggle-circle-size;
+        height: $toggle-circle-size;
+        background-color: $color-toggle-circle;
+        border-radius: 50%;
+        position: absolute;
+        left: $toggle-padding;
+        transition: all 0.3s ease;
+    }
+
+    &.active {
+        background-color: $color-toggle-active-bg;
+
+        .toggle-label {
+            color: $color-success;
+        }
+
+        .toggle-circle {
+            background-color: $color-success;
+
+        }
+
+        .toggle-circle {
+            left: calc(100% - 30px);
+        }
+    }
+}
