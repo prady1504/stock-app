@@ -74,7 +74,7 @@ finnhubSocket.on('message', (data) => {
     parsed.data.forEach((trade: any) => {
       const symbol = trade.s;
 
-      console.log('🔥 Updating:', symbol, trade.p);
+      console.log('Updating:', symbol, trade.p);
 
       latestPrices[symbol] = {
         ...(latestPrices[symbol] || {}),
