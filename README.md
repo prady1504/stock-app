@@ -8,10 +8,15 @@ Mock data simulation for offline/demo usage
 Toggle between real and mock data via environment configuration: change useMock to true or false in environment.ts
 Responsive UI with reusable components
 Clean and scalable SCSS architecture using design tokens
-
+## How to Run the project
+   ### Setup Instructions
+      1. Install Dependencies
+         npm install
+      2. Run Angular App
+         npm run start
 ## Development server
  ### Run Backend first
-   Goto backend/ folder then  Run `node websocketServer.ts`.
+   Goto stocka-pp/backend/ folder then  Run `node websocketServer.ts`.
    Will Start running on  `http://localhost:8000/`
    
  ### Run Frontend now
